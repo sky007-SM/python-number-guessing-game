@@ -93,7 +93,7 @@ def main():
     print("\nPress 's' to Start\t\t Press q to Quit")
     choice = input("Enter choice: ") 
     high_score = 0
-    while choice.lower() != "q":
+    while choice.lower() == "s":
         ceiling,attempts = choose_difficulty() # Function that allows users to set difficulty
         high_score=guessgame(ceiling,attempts,high_score) # Function that runs the game 
         print("\n Highest Score: ", high_score)
