@@ -96,9 +96,9 @@ def main():
         ceiling,attempts = choose_difficulty() # Function that allows users to set difficulty
         high_score=guessgame(ceiling,attempts,high_score) # Function that runs the game 
         print("\n Highest Score: ", high_score)
-        choice = input("Play again or Quit : s/q") # Allows player to replay
+        choice = input("Play again or Quit (s/q): ") # Allows player to replay
         while choice.lower() not in ['s', 'q']: # Handles Invalid choice input
             print("Invalid choice entry") 
-            choice = input("Play again or Quit : s/q")
+            choice = input("Play again or Quit (s/q): ")
 main()
 
