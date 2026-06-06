@@ -4,10 +4,10 @@ import random
 # To select difficulty for the user
 def choose_difficulty():
     print("Choose Difficulty\nEasy\nMedium\nHard\nImpossible")
-    difficulty = input("\nEnter Your choice from above:")
+    difficulty = input("\nEnter Your choice from above: ")
     while difficulty.lower() not in ["easy", "medium", "hard", "impossible"]: # Handles Invalid choice input
         print("That difficulty level doesn't exist")
-        difficulty = input("\nEnter Your choice from above:")
+        difficulty = input("\nEnter Your choice from above: ")
     # Difficulty level conditions
     if difficulty.lower() == "easy":
         return 50,10
@@ -90,7 +90,8 @@ def score_system(ceiling, attempts):
 def main():
     # Displays game 
     print("| GUESS THE NUMBER | ")
-    choice = input("\nPress 's' to Start\t\t Press q to Quit") 
+    print("\nPress 's' to Start\t\t Press q to Quit")
+    choice = input("Enter choice: ") 
     high_score = 0
     while choice.lower() != "q":
         ceiling,attempts = choose_difficulty() # Function that allows users to set difficulty
