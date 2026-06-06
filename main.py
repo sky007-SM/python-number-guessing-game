@@ -33,7 +33,7 @@ def guessgame(ceiling, attempts, high_score):
     count = 0
     while attempts > 0: 
         try:
-            answer = int(input("\nEnter your Guess:")) # Handles Invalid Input 
+            answer = int(input("\nEnter your Guess: ")) # Handles Invalid Input 
         except ValueError:
             print("Enter a number as input")   
             continue
